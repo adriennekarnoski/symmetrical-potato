@@ -1,0 +1,101 @@
+{% extends 'portfolio/base.html' %}
+
+
+  {% block nav %} {% include "projects/nav/projects_nav.html" %} {% endblock nav %}
+
+
+{% block content %}
+<section class="page projects">
+    <h1 class="heading">this is the projects view</h1>
+    <section class="projects_container clearfix">
+        <article class="project_box">
+        <a href="{% url 'projects:one' %}">
+            this is me box
+            <section class="project_description">
+                <h2>Avalara</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </section>
+            <section class="project_overlay">
+                <h3>read more</h3>
+            </section>
+    </a>
+        </article>
+         <article class="project_box">
+            this is me box
+            <section class="project_description">
+                <h2>Data Structures</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </section>
+            <section class="project_overlay">
+                <h3>read more</h3>
+            </section>
+        </article>
+        <article class="project_box">
+            this is me box
+            <section class="project_description">
+                <h2>Portfolio</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </section>
+            <section class="project_overlay">
+                <h3>read more</h3>
+            </section>
+        </article>
+         <article class="project_box">
+            this is me box
+            <section class="project_description">
+                <h2>Learning Journal</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </section>
+            <section class="project_overlay">
+                <h3>read more</h3>
+            </section>
+        </article>
+        <article class="project_box">
+            this is me box
+            <section class="project_description">
+                <h2>Jupyter Notebook</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </section>
+            <section class="project_overlay">
+                <h3>read more</h3>
+            </section>
+        </article>
+         <article class="project_box">
+            this is me box
+            <section class="project_description">
+                <h2>Command Line</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                </ul>
+            </section>
+            <section class="project_overlay">
+                <h3>read more</h3>
+            </section>
+        </article>
+
+    </section>
+</section>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+
+
+  {% block nav %} {% include "projects/nav/projects_nav.html" %} {% endblock nav %}
+
+
+{% block content %}
+<section class="page projects">
+    <article class="project_buttons">
+        <ul>
+        <a href="{% url 'projects:projects' %}" class="project_home_button">&#10094; Back to projects</a>
+        <li><a href="{% url 'projects:one' %}">six</a></li>
+        <li><a href="{% url 'projects:one' %}">five</a></li>
+        <li><a href="{% url 'projects:one' %}">four</a></li>
+        <li><a href="{% url 'projects:one' %}">three</a></li>
+        <li><a href="{% url 'projects:one' %}">two</a></li>
+        <li><a href="{% url 'projects:one' %}"><span class="project_active">one</span></a></li>
+    </ul>
+    </article>
+    <h1 class="heading">project one</h1>
+    
+</section>
+
+{% endblock %}

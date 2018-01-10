@@ -1,0 +1,93 @@
+main {
+    width: 100%;
+}
+
+.page {
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    float: right;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.one {
+    width: 100%;
+    margin: auto;
+}
+
+.two_even {
+    width: 90%;
+    margin: auto;
+}
+
+.two_small {
+    width: 30%;
+}
+
+.two_big {
+    width: 70%;
+}
+
+.three {
+    width: 33%;
+}
+
+.four {
+    width: 25%;
+}
+
+.five {
+    width: 20%;
+}
+
+
+.left {
+    float: none;
+}
+
+.right {
+    float: none;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        width: 80%;
+        float: right;
+    }
+
+    .one {
+        width: 70%;
+        margin: auto;
+    }
+
+    .two_even {
+        width: 50%;
+    }
+
+    .two_small {
+        width: 30%;
+    }
+
+    .two_big {
+        width: 70%;
+    }
+
+    .three {
+        width: 33%;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+}
