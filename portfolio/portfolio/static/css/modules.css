@@ -14,7 +14,7 @@
 }
 
 .home_container {
-    padding-top: 18%;
+    padding-top: 150px;
 }
 
 .home_title {
@@ -44,7 +44,7 @@
 
 .about {
     background: #f2f2f2;
-    padding-top: 10%;
+    padding-top: 150px;
 }
 
 .about_container {
@@ -53,9 +53,22 @@
 }
 
 .about_container .fa-2x {
-    padding: 5% 0%;
-    width: 80px;
+    display: inline-block;
+    width: 60px;
     color: white;
+}
+
+@media screen and (min-width: 640px) {
+    .about_container .fa-2x {
+        display: inline-block;
+        width: 80px;
+        color: white;
+    }
+}
+
+.contact_span {
+    display: inline-block;
+    padding-bottom: 10%;
 }
 
 .about_container h3 {
@@ -65,9 +78,40 @@
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 2px;
 }
+
 .about_blurb {
-    padding: 1% 0% 1% 0%;
+    width: 90%;
+    margin: auto;
+    padding: 1% 0%;
     display: inline-block;
+}
+
+@media screen and (min-width: 640px) {
+    .about_blurb {
+        width: 70%;
+        padding: 1% 0%;
+        display: inline-block;
+    }
+}
+
+.icon_container {
+    margin: 3% 0%;
+    width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .icon_container {
+        margin: 3% 0%;
+        width: 70%;
+    }
+}
+
+.icon_container article {
+    float: left;
+}
+
+.icon_container .fa-3x {
+    margin: 4% 0%;
 }
 
 .education {
@@ -76,9 +120,17 @@
 }
 
 .education ul {
-    padding: 0% 10%;
-    width: 80%;
+    padding: 0% 5%;
+    width: 90%;
     margin: 5% 0% 10% 0%;
+}
+
+@media screen and (min-width: 640px) {
+    .education ul {
+        padding: 0% 10%;
+        width: 80%;
+        margin: 5% 0% 10% 0%;
+    }
 }
 
 .school_name {
@@ -104,17 +156,13 @@
 .location {
     font-style: italic;
 }
-@media screen and (min-width: 640px) {
-    .about_blurb {
-        padding-right: 20%;
-    }
-}
+
 
 /*skills*/
 
 .skills {
     background: #2d3339;
-    padding-top: 10%;
+    padding-top: 150px;
     color: white;
 }
 
@@ -125,11 +173,10 @@
 }
 
 .skills_container p {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .skills_container .fa-4x {
-    color: #ffdb4d;
     padding-bottom: 15px;
 }
 .skills_container h2 {
@@ -143,9 +190,11 @@
 }
 
 .skills_container .svg-inline--fa {
-    color: #ffdb4d;
+    color: #e6b800;
     padding-right: 10px;
 }
+
+
 /*education*/
 
 
@@ -168,7 +217,7 @@
 
 .projects {
     background: #f2f2f2;
-    padding-top: 110px;
+    padding-top: 150px;
 }
 
 .project_detail {
@@ -179,6 +228,11 @@
 .project_view {
     width: 80%;
     padding: 3% 10%;
+}
+
+.project_view h2 {
+    padding-top: 15px;
+    letter-spacing: 2px;
 }
 
 .project_view p {

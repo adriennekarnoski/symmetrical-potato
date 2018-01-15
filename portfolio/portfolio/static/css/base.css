@@ -7,7 +7,7 @@ nav {
     height: 80px;
     background: #181b1e;
     display: inline-block;
-    position: relative;
+    position: fixed;
 }
 
 nav ul {
