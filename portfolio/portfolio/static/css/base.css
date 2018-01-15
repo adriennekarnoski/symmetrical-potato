@@ -98,6 +98,10 @@ p {
         letter-spacing: 2px;
     }
 
+    nav a:hover {
+        color: #808080;
+    }
+
     .logo {
         font-size: 2em;
         margin: 1% 0%;

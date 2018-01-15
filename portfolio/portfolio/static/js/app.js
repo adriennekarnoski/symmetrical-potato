@@ -1,5 +1,5 @@
 handleNav = function() {
-  $('#nav').on('click', 'i.fa-bars', function() {
+  $('#nav').on('click', 'svg.fa-bars', function() {
       var $navList = $('#nav_ul');
       $navList.slideToggle('slow');
     });

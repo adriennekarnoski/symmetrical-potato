@@ -3,7 +3,7 @@ main {
 }
 
 .page {
-    height: 100vh;
+    height: 100%;
 }
 
 .container {
@@ -44,7 +44,9 @@ main {
 }
 
 .five {
-    width: 20%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10%;
 }
 
 
@@ -83,6 +85,11 @@ main {
         width: 33%;
     }
 
+    .five {
+        width: 20%;
+        text-align: center;
+        padding-bottom: 0%;
+    }
     .left {
         float: left;
     }
