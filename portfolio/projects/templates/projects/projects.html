@@ -6,96 +6,93 @@
 
 {% block content %}
 <section class="page projects">
-    <h1 class="heading">this is the projects view</h1>
+    <h1 class="heading">Projects and Code Samples</h1>
     <section class="projects_container clearfix">
-        <article class="project_box">
-        <a href="{% url 'projects:one' %}">
-            this is me box
-            <section class="project_description">
-                <h2>Avalara</h2>
+        <article class="two_small left text_center">
+            <i class="fas fa-wrench fa-5x"></i>
+        </article>
+        <article class="two_big right">
+             <h2>Avalara</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Github</li>
+        
+                </ul>
+                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
+        </article>
+    </section>
+    <section class="projects_container clearfix">
+        <article class="two_small left text_center">
+            <i class="far fa-chart-bar fa-5x"></i>
+        </article>
+        <article class="two_big right">
+             <h2>Data Structures</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
+        </article>
+    </section>
+    <section class="projects_container clearfix">
+        <article class="two_small left text_center">
+            <i class="far fa-address-card fa-5x"></i>
+        </article>
+        <article class="two_big right">
+             <h2>Portfolio</h2>
+                <ul class="project_list">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+                <a href="{% url 'projects:one' %}" class="project_link">Case Study <i class="fas fa-angle-right"></i></a>
+        </article>
+    </section>
+    <section class="projects_container clearfix">
+        <article class="two_small left text_center">
+            <i class="fas fa-pencil-alt fa-5x"></i>
+        </article>
+        <article class="two_big right">
+             <h2>Learning Journal</h2>
                 <ul class="project_list">
                     <li>One</li>
                     <li>Two</li>
                     <li>Three</li>
                 </ul>
-            </section>
-            <section class="project_overlay">
-                <h3>read more</h3>
-            </section>
-    </a>
+                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
         </article>
-         <article class="project_box">
-            this is me box
-            <section class="project_description">
-                <h2>Data Structures</h2>
+    </section>
+    <section class="projects_container clearfix">
+        <article class="two_small left text_center">
+            <i class="far fa-file-code fa-5x"></i>
+        </article>
+        <article class="two_big right">
+             <h2>Jupyter Notebook</h2>
                 <ul class="project_list">
                     <li>One</li>
                     <li>Two</li>
                     <li>Three</li>
                 </ul>
-            </section>
-            <section class="project_overlay">
-                <h3>read more</h3>
-            </section>
+                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
         </article>
-        <article class="project_box">
-            this is me box
-            <section class="project_description">
-                <h2>Portfolio</h2>
+    </section>
+    <section class="projects_container clearfix">
+        <article class="two_small left text_center">
+            <i class="fas fa-globe fa-5x"></i>
+        </article>
+        <article class="two_big right">
+             <h2>Job Scraper</h2>
                 <ul class="project_list">
                     <li>One</li>
                     <li>Two</li>
                     <li>Three</li>
                 </ul>
-            </section>
-            <section class="project_overlay">
-                <h3>read more</h3>
-            </section>
+                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
         </article>
-         <article class="project_box">
-            this is me box
-            <section class="project_description">
-                <h2>Learning Journal</h2>
-                <ul class="project_list">
-                    <li>One</li>
-                    <li>Two</li>
-                    <li>Three</li>
-                </ul>
-            </section>
-            <section class="project_overlay">
-                <h3>read more</h3>
-            </section>
-        </article>
-        <article class="project_box">
-            this is me box
-            <section class="project_description">
-                <h2>Jupyter Notebook</h2>
-                <ul class="project_list">
-                    <li>One</li>
-                    <li>Two</li>
-                    <li>Three</li>
-                </ul>
-            </section>
-            <section class="project_overlay">
-                <h3>read more</h3>
-            </section>
-        </article>
-         <article class="project_box">
-            this is me box
-            <section class="project_description">
-                <h2>Command Line</h2>
-                <ul class="project_list">
-                    <li>One</li>
-                    <li>Two</li>
-                    <li>Three</li>
-                </ul>
-            </section>
-            <section class="project_overlay">
-                <h3>read more</h3>
-            </section>
-        </article>
-
     </section>
 </section>
+        
+
+ 
+
 
 {% endblock %}

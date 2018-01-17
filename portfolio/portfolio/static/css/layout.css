@@ -51,7 +51,7 @@ main {
 
 
 .left {
-    float: none;
+    float: left;
 }
 
 .right {

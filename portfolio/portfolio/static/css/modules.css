@@ -205,12 +205,20 @@
 
 .skills_list {
     line-height: 1.5em;
-    margin-top: 4%;
+    margin: 4% 0% 20% 0%;
     font-size: 14px;
 }
 
+@media screen and (min-width: 640px) {
+    .skills_list {
+        line-height: 1.5em;
+        margin-top: 4%;
+        font-size: 14px;
+    }
+}
+
 .skills_container .svg-inline--fa {
-    color: #e6b800;
+    color: #ffd11a;
     padding-right: 10px;
 }
 
@@ -301,83 +309,45 @@
 }
 
 .projects_container {
-    width: 90%;
+    width: 80%;
     margin: auto;
+    padding: 5% 0%;
 }
 
-.project_box {
-    width: 90%;
-    margin: 5%;
-    height: 300px;
-    display: inline-block;
-    background: white;
-    position: static;
+.projects_container ul {
+    padding: 2% 0% 0% 5%;
 }
 
-@media screen and (min-width: 640px) {
-    .project_box {
-        width: 28%;
-        margin: 2.5%;
-        height: 300px;
-        display: inline-block;
-        background: white;
-        position: relative;
-    }
-}
-.project_box a {
-    text-decoration: none;
-    color: white;
+.projects_container .fa-5x {
+    padding-top: 10%;
 }
 
-.project_description {
-    position: static;
-    height: 100px;
-    width: 96%;
-    background: #2d3339;
-    margin-top: 198px;
-    padding: 2%;
-}
-
-@media screen and (min-width: 640px) {
-    .project_description {
-        position: absolute;
-        bottom: 0;
-        height: 100px;
-        width: 96%;
-        background: #2d3339;
-        padding: 2%;
-    }
-}
-
-.project_description h2 {
-    font-size: 0.9em;
+.projects_container h2 {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    background: #e6b800;
+    width: 97%;
+    padding-left: 3%;
+    line-height: 50px;
     display: inline-block;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.project_overlay {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: #e6b800;
-    opacity: 0.9;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: 1s ease;
-}
-
-.project_overlay h3 {
-    text-align: center;
-    color: white;
-    font-size: 2em;
-    padding-top: 30%;
+.project_link {
+    display: inline-block;
+    margin: 10% 0% 0% 80%;
+    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    width: 150px;
 }
 
+.project_link svg {
+    margin-left: 5%;
+    display: inline-block;
+}
 
 
 /* text */
