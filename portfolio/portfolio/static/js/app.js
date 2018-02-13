@@ -1,19 +1,10 @@
-// handleNav = function() {
-//   $('#nav').on('click', 'svg.fa-bars', function() {
-//       var $navList = $('#nav_ul');
-//       $navList.slideToggle('slow');
-//     });
-// }
-
-
-// handleProjects = function() {
-//     $('.project_box').hover(function() {
-//       var $projectText = $('.project_overlay');
-//       $projectText.slideToggle('slow');
-//     });
-// }
-// handleNav()
-// handleProjects()
+$(document).ready(function(){
+    $("nav").on("click", "#nav_button", function(){
+        console.log('yas')
+        $("nav ul").slideToggle("slow")
+    });
+    
+});
 
 $(document).ready(function(){
     $("#strengths").addClass("active_panel")

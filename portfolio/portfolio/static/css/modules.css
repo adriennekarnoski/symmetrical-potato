@@ -19,28 +19,6 @@
     padding-top: 150px;
 }
 
-.home_title {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.home_blurb {
-    display: inline-block;
-    width: 90%;
-    padding: 3% 5%;
-}
-
-.home_title h1 {
-    font-size: 3.5em;
-    padding: 8% 0% 0% 0%;
-}
-
-.home_title h2 {
-    font-size: 2em;
-    margin-bottom: 5%;
-}
 
 /*about*/
 
@@ -73,28 +51,7 @@
     padding-bottom: 10%;
 }
 
-.about_container h3 {
-    font-size: 0.8em;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 2px;
-}
 
-.about_blurb {
-    width: 90%;
-    margin: auto;
-    padding: 1% 0%;
-    display: inline-block;
-}
-
-@media screen and (min-width: 640px) {
-    .about_blurb {
-        width: 70%;
-        padding: 1% 0%;
-        display: inline-block;
-    }
-}
 
 .icon_container {
     margin: 3% 0%;
@@ -136,31 +93,6 @@
     }
 }
 
-.school_name {
-    text-transform: uppercase;
-    display: inline-block;  
-}
-
-.school_qual {
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 2px;
-    width: 100%;
-    display: inline-block;
-}
-
-.date {
-    letter-spacing: 1px;
-    padding-bottom: 15px;
-    color: white;
-}
-
-.location {
-    font-style: italic;
-}
-
-
 /*skills*/
 
 .skills {
@@ -183,25 +115,6 @@
     }
 }
 
-.skills_container p {
-    padding-bottom: 50px;
-}
-
-.skills_container .fa-4x {
-    padding-bottom: 15px;
-    font-size: 6em;
-}
-
-@media screen and (min-width: 640px) {
-    .skills_container .fa-4x {
-        padding-bottom: 15px;
-        font-size: 4em;
-    }
-}
-
-.skills h1 {
-    margin-bottom: 5%;
-}
 
 .skills_list {
     line-height: 1.5em;
@@ -217,33 +130,32 @@
     }
 }
 
-.skills_bold {
-    font-size: 1em;
-    text-transform: uppercase;
-    color: #595959;
-    display: inline-block;
-    padding-top: 2%;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;   
-}
 
-.skills_container h3 {
-    margin-top: 50px;
-}
 .skills_container .svg-inline--fa {
     color: #e6b800;
     padding-right: 10px;
 }
 
+
 .accordion {
-    width: 80%;
-    margin: auto;
-    height: 50px;
-    display: block;
-    background: #e6b800;
-    color: black;
+    width: 100%;
     border: none;
     outline: none;
+    background: #e6b800;
+}
+
+
+@media screen and (min-width: 640px) {
+    .accordion {
+        width: 80%;
+        margin: auto;
+        height: 50px;
+        display: block;
+        background: #e6b800;
+        color: black;
+        border: none;
+        outline: none;
+    }
 }
 
 .accordion_header {
@@ -256,10 +168,12 @@
 }
 
 .accordion_icon {
+    float: right;
     font-size: 2em;
     line-height: 2em;
     padding: 0% 2%;
 }
+
 
 .active_panel, .accordion:hover {
     background: #ffcc00;
@@ -287,10 +201,6 @@
     margin: 3% auto;
 }
 
-.education_container h2 {
-    text-align: right;
-}
-
 .education_list {
     margin-left: 2%;
 }
@@ -313,16 +223,7 @@
     padding: 3% 10%;
 }
 
-.project_view h2 {
-    padding-top: 15px;
-    letter-spacing: 2px;
-}
 
-.project_view p {
-    width: 80%;
-    margin: auto;
-
-}
 
 .blue {
     background: #2d3339;
@@ -335,20 +236,6 @@
 
 .gray {
     background: #f2f2f2;
-}
-.project_h1 {
-    text-align: center;
-    font-size: 2em;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    padding: 3% 0%;
-}
-
-.project_title h1 {
-    text-align: center;
-    font-size: 3.5em;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
 }
 
 .project_buttons {
@@ -377,17 +264,7 @@
     padding-top: 10%;
 }
 
-.projects_container h2 {
-    font-size: 1.3em;
-    letter-spacing: 2px;
-    background: #e6b800;
-    width: 97%;
-    padding-left: 3%;
-    line-height: 50px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-}
+
 
 .project_link {
     display: inline-block;
@@ -404,39 +281,3 @@
     display: inline-block;
 }
 
-
-/* text */
-
-.active {
-    color: #ffd11a;
-}
-
-.button {
-    text-decoration: none;
-    color: #181B1E;
-    background: #ffd11a;
-    display: inline-block;
-    width: 250px;
-    padding: 10px;
-    text-align: center;
-}
-
-.title {
-    font-size: 0.8em;
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.text_center {
-    text-align: center;
-}
-
-.text_right {
-    text-align: right;
-}
-
-.text_left {
-    text-align: left;
-}

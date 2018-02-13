@@ -13,6 +13,7 @@
   <link href="{% static '/css/base.css' %}" rel="stylesheet">
   <link href="{% static '/css/layout.css' %}" rel="stylesheet">
   <link href="{% static '/css/modules.css' %}" rel="stylesheet">
+   <link href="{% static '/css/text.css' %}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
@@ -20,9 +21,9 @@
 </head>
 <body>
   <main>
-  <nav id="nav">
+  <nav>
     <h1 class="logo">ADRIENNE KARNOSKI</h1>
-    <i class="fas fa-bars fa-3x" aria-hidden="true"></i>
+    <i class="fas fa-bars fa-3x" id="nav_button"></i>
     {% block nav %} {% endblock nav %}
   </nav>
 
