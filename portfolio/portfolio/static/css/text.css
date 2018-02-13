@@ -2,6 +2,18 @@
 
 /*general*/
 
+.heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sub_heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
 
 .active {
     color: #ffd11a;
@@ -37,6 +49,10 @@
     text-align: left;
 }
 
+p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
 
 /*home*/
 
@@ -82,7 +98,7 @@
 
 @media screen and (min-width: 640px) {
     .about_blurb {
-        width: 70%;
+        width: 60%;
         padding: 1% 0%;
         display: inline-block;
     }
@@ -183,7 +199,7 @@
     background: #e6b800;
     width: 97%;
     padding-left: 3%;
-    line-height: 50px;
+    line-height: 60px;
     display: inline-block;
     text-transform: uppercase;
     font-family: 'Josefin Sans', sans-serif;

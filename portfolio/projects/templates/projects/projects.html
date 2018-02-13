@@ -7,115 +7,167 @@
 {% block content %}
 <section class="page projects">
     <h1 class="heading">Projects and Code Samples</h1>
-    <section class="projects_container clearfix">
-        <article class="two_small left text_center">
+    <section class="side_tab">
+        <ul>
+            <li id="_container">Show All <span class="hidebutton"><i class="fas fa-angle-right"></i></span></li>
+            <li id="_sdk">SDK <span class="hidebutton"><i class="fas fa-angle-right"></i></span></li>
+            <li id="_web">Websites</li>
+            <li id="_data">Data</li>
+            <li id="_script">Scripts</li>
+        </ul>
+    </section>
+
+    <section class="projects_container clearfix projects_sdk">
+        <h2 class="text_center">AvaTax Python SDK</h2>
+        <article class="two_small left">
             <i class="fas fa-wrench fa-5x"></i>
         </article>
         <article class="two_big right">
-             <h2>Avalara</h2>
-                <ul class="project_list">
-                    <li>Built For: Avalara</li>
-                    <li>December 2017</li>
-                    <li>Description</li>
-                    <li>Python</li>
-                    <li>Tools</li>
-        
-                </ul>
-                <a href="https://github.com/avadev/AvaTax-REST-V2-Python-SDK" class="project_link">Github<i class="fas fa-angle-right"></i></a>
+            <ul class="skills_list">
+                <li><span class="skills_bold">Built For</span></li>
+                <li><a href="https://developer.avalara.com/?sessionId=1518548982606&referrer=&lastReferrer=developer.avalara.com">Avalara</a></li>
+                <li><span class="skills_bold">Built With</span></li>
+                <li>Python, Requests, RESTful APIs</li>
+                <li><span class="skills_bold">Description</span></li>
+                <li>Software Development Kit to interface with the Avalara AvaTax APIs.</li>
+                <li><span class="skills_bold">Highlights</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Pytest, Tox, Travis CI</li>
+            </ul>
+            <a href="https://github.com/avadev/AvaTax-REST-V2-Python-SDK" class="project_link">Github<i class="fas fa-angle-right"></i></a>
         </article>
     </section>
-    <section class="projects_container clearfix">
-        <article class="two_small left text_center">
+
+    <section class="projects_container clearfix projects_data">
+        <h2 class="text_center">Data Structures</h2>
+        <article class="two_small left">
             <i class="far fa-chart-bar fa-5x"></i>
         </article>
         <article class="two_big right">
-             <h2>Data Structures</h2>
-                <ul class="project_list">
-                    <li><a href="https://github.com/adriennekarnoski/data-structures">View on Github</a></li>
-                    <li>October 2017</li>
-                    <li>Description</li>
-                    <li>Python, Javascript</li>
-                    <li>Tools</li>
-                </ul>
-                <a href="https://github.com/adriennekarnoski/data-structures" class="project_link">Github<i class="fas fa-angle-right"></i></a>
+            <ul class="skills_list">
+                <li><span class="skills_bold">Built For</span></li>
+                <li>Course Work, Code Challenges</li>
+                <li><span class="skills_bold">Built With</span></li>
+                <li>Python, Javascript</li>
+                <li><span class="skills_bold">Description</span></li>
+                <li>Continuous Integration, Unit Testing, Integration Testing, Tox, Pytest</li>
+                <li><span class="skills_bold">Highlights</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Pytest, Tox, Jest, Travis CI</li>
+            </ul>
+            <a href="https://github.com/adriennekarnoski/data-structures" class="project_link">Github<i class="fas fa-angle-right"></i></a>
         </article>
     </section>
-    <section class="projects_container clearfix">
-        <article class="two_small left text_center">
+
+    <section class="projects_container clearfix projects_web">
+        <h2 class="text_center">Portfolio</h2>
+        <article class="two_small left">
             <i class="far fa-address-card fa-5x"></i>
         </article>
         <article class="two_big right">
-             <h2>Portfolio</h2>
-                <ul class="project_list">
-                    <li><a href="https://github.com/adriennekarnoski/symmetrical-potato">View on Github</a></li>
-                    <li>January 2018</li>
-                    <li>Description</li>
-                    <li>Python, Javascript</li>
-                    <li>Tools</li>
-                </ul>
-                <a href="{% url 'projects:one' %}" class="project_link">Case Study <i class="fas fa-angle-right"></i></a>
+            <ul class="skills_list">
+                <li><span class="skills_bold">Built For</span></li>
+                <li>Personal Website</li>
+                <li><span class="skills_bold">Built With</span></li>
+                <li>Python, Django, HTML, CSS, jQuery</li>
+                <li><span class="skills_bold">Description</span></li>
+                <li>Personal Website</li>
+                <li><span class="skills_bold">Highlights</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Pytest, Tox, Jest, Travis CI</li>
+            </ul>
+            <a href="https://github.com/adriennekarnoski/symmetrical-potato" class="project_link">Github<i class="fas fa-angle-right"></i></a>
         </article>
     </section>
-    <section class="projects_container clearfix">
-        <article class="two_small left text_center">
+
+    <section class="projects_container clearfix projects_web">
+        <h2 class="text_center">Learning Journal</h2>
+        <article class="two_small left">
             <i class="fas fa-pencil-alt fa-5x"></i>
         </article>
         <article class="two_big right">
-             <h2>Learning Journal</h2>
-                <ul class="project_list">
-                    <li><a href="https://github.com/adriennekarnoski/pyramid-learning-journal">View on Github</a></li>
-                    <li>January 2018</li>
-                    <li>Description</li>
-                    <li>Python, Javascript</li>
-                    <li>Tools</li>
-                </ul>
-                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
+             <ul class="skills_list">
+                <li><span class="skills_bold">Built For</span></li>
+                <li>Curriculum Project</li>
+                <li><span class="skills_bold">Built With</span></li>
+                <li>Python, Pyramid, SQLAlchemy, HTML, CSS, jQuery</li>
+                <li><span class="skills_bold">Description</span></li>
+                <li>Personal Website</li>
+                <li><span class="skills_bold">Highlights</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Pytest, Tox</li>
+            </ul>
+            <a href="https://github.com/adriennekarnoski/pyramid-learning-journal" class="project_link">Github<i class="fas fa-angle-right"></i></a>
         </article>
     </section>
-    <section class="projects_container clearfix">
-        <article class="two_small left text_center">
-            <i class="fas fa-link fa-5x"></i>
+
+    <section class="projects_container clearfix projects_web">
+        <h2 class="text_center">Space Rocks</h2>
+        <article class="two_small left">
+            <i class="fas fa-rocket fa-5x"></i>
         </article>
         <article class="two_big right">
-             <h2>Block Chain</h2>
-                <ul class="project_list">
-                    <li>One</li>
-                    <li>Two</li>
-                    <li>Three</li>
-                </ul>
-                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
+            <ul class="skills_list">
+                <li><span class="skills_bold">Built For</span></li>
+                <li>Curriculum Project</li>
+                <li><span class="skills_bold">Built With</span></li>
+                <li>Python, Pyramid, Bokeh, SQLAlchemy, NASA APIs, Bootstrap</li>
+                <li><span class="skills_bold">Description</span></li>
+                <li>Personal Website</li>
+                <li><span class="skills_bold">Highlights</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Pytest, Tox</li>
+            </ul>
+            <a href="https://github.com/adriennekarnoski/space-rocks" class="project_link">Github<i class="fas fa-angle-right"></i></a>
         </article>
     </section>
-    <section class="projects_container clearfix">
-        <article class="two_small left text_center">
+
+    <section class="projects_container clearfix projects_script">
+        <h2 class="text_center">Job Scraper</h2>
+        <article class="two_small left">
             <i class="fas fa-globe fa-5x"></i>
         </article>
         <article class="two_big right">
-             <h2>Job Scraper</h2>
-                <ul class="project_list">
-                    <li><a href="https://github.com/adriennekarnoski/job_scraper">View on Github</a></li>
-                    <li>January 2018</li>
-                    <li>Description</li>
-                    <li>Python, Javascript</li>
-                    <li>Tools</li>
-                </ul>
-                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
+            <ul class="skills_list">
+                <li><span class="skills_bold">Built For</span></li>
+                <li>Personal Project</li>
+                <li><span class="skills_bold">Built With</span></li>
+                <li>Python, Django, HTML, CSS, jQuery</li>
+                <li><span class="skills_bold">Description</span></li>
+                <li>Personal Website</li>
+                <li><span class="skills_bold">Highlights</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Pytest, Tox, Jest, Travis CI</li>
+            </ul>
+            <a href="https://github.com/adriennekarnoski/job_scraper" class="project_link">Github<i class="fas fa-angle-right"></i></a>
         </article>
     </section>
-    <section class="projects_container clearfix">
-        <article class="two_small left text_center">
+
+    <section class="projects_container clearfix projects_data">
+        <h2 class="text_center">Jupyter Notebook</h2>
+        <article class="two_small left">
             <i class="fas fa-cog fa-5x"></i>
         </article>
         <article class="two_big right">
-             <h2>Jupyter Notebook</h2>
-                <ul class="project_list">
-                    <li><a href="https://github.com/adriennekarnoski/machine_learning">View on Github</a></li>
-                    <li>January 2018</li>
-                    <li>Description</li>
-                    <li>Python, Javascript</li>
-                    <li>Tools</li>
-                </ul>
-                <a href="{% url 'projects:one' %}" class="project_link">Case Study<i class="fas fa-angle-right"></i></a>
+            <ul class="skills_list">
+                <li><span class="skills_bold">Built For</span></li>
+                <li>Personal Project, </li>
+                <li><span class="skills_bold">Built With</span></li>
+                <li>Jupyter Notebook, Python, Pandas, Numpy, Matplotlib</li>
+                <li><span class="skills_bold">Description</span></li>
+                <li>Personal Website</li>
+                <li><span class="skills_bold">Highlights</span></li>
+                <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+                <li><span class="skills_bold">Testing</span></li>
+                <li>Pytest, Tox, Jest, Travis CI</li>
+            </ul>
+            <a href="https://github.com/adriennekarnoski/machine_learning" class="project_link">Github<i class="fas fa-angle-right"></i></a>
         </article>
     </section>
 </section>

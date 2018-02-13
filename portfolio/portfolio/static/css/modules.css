@@ -15,17 +15,8 @@
     }
 }
 
-.home_container {
-    padding-top: 150px;
-}
-
 
 /*about*/
-
-.about {
-    background: #f2f2f2;
-    padding-top: 150px;
-}
 
 .about_container {
     margin-top: 3%;
@@ -51,8 +42,6 @@
     padding-bottom: 10%;
 }
 
-
-
 .icon_container {
     margin: 3% 0%;
     width: 100%;
@@ -60,8 +49,8 @@
 
 @media screen and (min-width: 640px) {
     .icon_container {
-        margin: 3% 0%;
-        width: 70%;
+        margin: 3% auto;
+        width: 60%;
     }
 }
 
@@ -115,7 +104,6 @@
     }
 }
 
-
 .skills_list {
     line-height: 1.5em;
     margin: 5% 0% 5% 15%;
@@ -130,12 +118,10 @@
     }
 }
 
-
 .skills_container .svg-inline--fa {
     color: #e6b800;
     padding-right: 10px;
 }
-
 
 .accordion {
     width: 100%;
@@ -174,7 +160,6 @@
     padding: 0% 2%;
 }
 
-
 .active_panel, .accordion:hover {
     background: #ffcc00;
 }
@@ -192,83 +177,23 @@
     margin-bottom: 5%;
 }
 
-/*education*/
-
-
-
-.education_container {
-    width: 70%;
-    margin: 3% auto;
-}
-
-.education_list {
-    margin-left: 2%;
-}
-
-
 /*projects*/
 
-.projects {
-    background: #f2f2f2;
-    padding-top: 150px;
-}
-
-.project_detail {
-    background: #f2f2f2;
-    padding-top: 150px;
-}
-
-.project_view {
-    width: 80%;
-    padding: 3% 10%;
-}
-
-
-
-.blue {
-    background: #2d3339;
-    color: white;
-}
-
-.yellow {
-    background: #e6b800;
-}
-
-.gray {
-    background: #f2f2f2;
-}
-
-.project_buttons {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    background: #e6b800;
-    padding: 40px 0% 10px 3%;
-    float: left;
-    margin-top: 30px;
-    width: 97%;
-    display: inline-block;
-}
 
 .projects_container {
     width: 80%;
     margin: auto;
-    padding: 5% 0%;
-}
-
-.projects_container ul {
-    padding: 2% 0% 0% 5%;
+    padding: 3% 0%;
 }
 
 .projects_container .fa-5x {
-    padding-top: 10%;
+    padding: 35% 0% 0% 15%;
+    float: right;
 }
-
-
 
 .project_link {
     display: inline-block;
-    margin: 10% 0% 0% 80%;
+    margin: 0% 0% 0% 80%;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -281,3 +206,40 @@
     display: inline-block;
 }
 
+.side_tab {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .side_tab {
+        display: block;
+        position: fixed;
+        left: 0;
+        width: 220px;
+        background: rgba(24, 27, 30, 0.5);
+    }
+
+    .side_tab ul {
+        padding: 10% 0%;
+    }
+
+    .side_tab li {
+        padding: 10% 0% 10% 20%;
+        font-size: 0.9em;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .side_tab li:hover {
+        color: #181b1e;
+
+    }
+
+    .side_tab [data-icon="angle-right"] {
+    padding-right: 25px;
+    float: right;
+    }
+}
