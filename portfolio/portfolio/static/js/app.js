@@ -14,3 +14,16 @@
 // }
 // handleNav()
 // handleProjects()
+
+$(document).ready(function(){
+    $("#strengths").addClass("active_panel")
+    $("#strengthspanel").show()
+    $(".accordion").click(function(){
+        var section = $(this).attr('id')
+        var icons = $(this).find(".accordion_icon")
+        $(this).toggleClass("active_panel")
+        icons.children().toggle()
+        $("#" + section + "panel").slideToggle();
+    });
+    
+});
