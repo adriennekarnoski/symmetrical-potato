@@ -104,6 +104,10 @@
     }
 }
 
+.skills_container p {
+    width: 80%;
+    margin: auto;
+}
 .skills_list {
     line-height: 1.5em;
     margin: 5% 0% 5% 15%;
@@ -118,6 +122,10 @@
     }
 }
 
+.military li {
+    text-indent: -1em;
+    padding: 1% 0%;
+}
 .skills_container .svg-inline--fa {
     color: #e6b800;
     padding-right: 10px;
@@ -186,10 +194,19 @@
     padding: 3% 0%;
 }
 
-.projects_container .fa-5x {
-    padding: 35% 0% 0% 15%;
-    float: right;
+ .projects_container .fa-5x {
+    display: none;
 }
+
+@media screen and (min-width: 640px) {
+    .projects_container .fa-5x {
+        display: block;
+        padding: 35% 0% 0% 15%;
+        float: right;
+        color: black;
+    }
+}
+
 
 .project_link {
     display: inline-block;
@@ -199,6 +216,10 @@
     letter-spacing: 2px;
     color: black;
     width: 150px;
+}
+
+.inner_list {
+    padding-left: 5%;
 }
 
 .project_link svg {
@@ -216,11 +237,15 @@
         position: fixed;
         left: 0;
         width: 220px;
-        background: rgba(24, 27, 30, 0.5);
+        background: rgba(89, 89, 89, 0.7);
+    }
+    .side_tab h2 {
+        text-align: center;
+        padding-top: 10%;
     }
 
     .side_tab ul {
-        padding: 10% 0%;
+        padding: 0% 10% 10% 0%;
     }
 
     .side_tab li {

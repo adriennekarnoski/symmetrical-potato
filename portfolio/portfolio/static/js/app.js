@@ -7,8 +7,8 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#strengths").addClass("active_panel")
-    $("#strengthspanel").show()
+    $("#techincal").addClass("active_panel")
+    $("#technicalpanel").show()
     $(".accordion").click(function(){
         var section = $(this).attr('id')
         var icons = $(this).find(".accordion_icon")
