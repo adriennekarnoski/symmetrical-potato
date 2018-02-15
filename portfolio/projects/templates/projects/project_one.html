@@ -1,0 +1,74 @@
+{% extends 'portfolio/base.html' %}
+
+
+  {% block nav %} {% include "projects/nav/projects_nav.html" %} <a href="{% url 'projects:projects' %}" class="project_buttons">&#10094; Back to projects</a>{% endblock nav %}
+
+
+{% block content %}
+<section class="page project_detail">
+    
+    <section class="project_view clearfix project_title">
+        <article>
+        <h1>Avalara</h1>
+        <p class="text_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        </article>
+    </section>
+    <section class="project_view clearfix">
+        <article class="three left">
+            <h2 class="sub_heading text_center">The Project</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        </article>
+        <article class="three left">
+            <h2 class="sub_heading text_center">The Problem</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        </article>
+        <article class="three left">
+            <h2 class="sub_heading text_center">The Tools</h2>
+            <ul>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+            </ul>
+        </article>
+
+
+    </section>
+    <section class="project_view clearfix blue">
+        <h1 class="project_h1">Process</h1>
+            <article class="five left">
+                <h2 class="title"><i class="fas fa-tasks fa-4x"></i></h2>
+                <h2 class="title">Preparation</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="far fa-file-code fa-4x"></i></h2>
+                <h2 class="title">Psuedo Code</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="fas fa-flask fa-4x"></i></h2>
+                <h2 class="title">Test</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="fas fa-cogs fa-4x"></i></h2>
+                <h2 class="title">Build</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="fas fa-bug fa-4x"></i></h2>
+                <h2 class="title">Debug</h2>
+            </article>
+    </section>
+        
+    <section class="project_view clearfix">
+        <h1 class="project_h1">Process</h1>
+        <article class="two_small left">
+            <h2 class="sub_heading">Tools and stuff</h2>
+        </article>
+        <article class="two_big right">
+            <h2 class="sub_heading">Process</h2>
+        </article>
+    </section>
+    
+</section>
+
+{% endblock %}

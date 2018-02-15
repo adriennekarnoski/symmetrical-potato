@@ -1,0 +1,162 @@
+{% extends 'portfolio/base.html' %}
+
+
+  {% block nav %} {% include "about/nav/skills_nav.html" %} {% endblock nav %}
+
+
+{% block content %}
+<section class="page skills">
+    <h1 class="heading">Skills and Qualifications</h1>
+
+    <button class="accordion clearfix" id="strengths">
+        <span class="accordion_header left">Key Strengths</span>
+        <span class="accordion_icon right">
+            <i class="fas fa-plus hidebutton"></i>
+            <i class="fas fa-minus showbutton"></i>
+        </span>
+    </button>
+    <div class="panel" id="strengthspanel">
+         <section class="skills_container clearfix">
+        <h2 class=sub_heading>Key Strengths</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="two_even left blue">
+            <h3 class="title">Problem Solving</h2>
+            <p class="text_center">Stuff and things</p>
+        </article>
+        <article class="two_even right blue">
+            <h3 class="title">Stuff</h2>
+            <p class="text_center">Stuff and things</p>
+        </article>
+        <article class="two_even left blue">
+            <h3 class="title">Collaboration</h2>
+            <p class="text_center">Stuff and things</p>
+        </article>
+        <article class="two_even right blue">
+            <h3 class="title">Communication</h2>
+            <p class="text_center">Stuff and things</p>
+        </article>
+
+    </section>
+        <!-- <section class="skills_container cleafix">
+            <h2 class=sub_heading>Key Strengths</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+            <article class="two_even left blue">
+                <h2 class="title"><i class="fas fa-search fa-4x"></i></h2>
+                <h2 class="title">Problem Solving</h2>
+            </article>
+
+            <article class="two_even right blue">
+                <h2 class="title"><i class="fas fa-tachometer-alt fa-4x"></i></h2>
+                <h2 class="title">Fast Pased</h2>    
+            </article>
+
+            <article class="two_even left blue">
+                <h2 class="title"><i class="fas fa-users fa-4x"></i></h2>
+                <h2 class="title">Collaboration</h2>      
+            </article>
+
+            <article class="two_even right blue">
+                <h2 class="title"><i class="far fa-comment-alt fa-4x"></i></h2>
+                <h2 class="title">Communication</h2>
+            </article>
+
+        </section> -->
+    </div>
+
+<button class="accordion clearfix" id="technical">
+        <span class="accordion_header left">Technical Skills</span>
+        <span class="accordion_icon right">
+            <i class="fas fa-plus showbutton"></i>
+            <i class="fas fa-minus hidebutton"></i>
+        </span>
+    </button>
+<div class="panel" id="technicalpanel">
+    <section class="skills_container clearfix">
+        <h2 class=sub_heading>Technical Skills</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="one">
+           <ul class="skills_list">
+            <li><span class="skills_bold">Languages</span></li>
+            <li>Python, Javascript, jQuery</li>
+            <li><span class="skills_bold">Development Environment</span></li>
+            <li>Jupyter Notebook, VirtualENV, Source Control, Git, GitHub</li>
+            <li><span class="skills_bold">Testing</span></li>
+            <li>Continuous Integration, Unit Testing, Integration Testing, Tox, Pytest</li>
+            <li><span class="skills_bold">Web Development</span></li>
+            <li>Django, Flask, Pyramid, Jinja2, HTML, CSS</li>
+            <li><span class="skills_bold">Data:</span></li>
+            <li>PostgreSQL, SQLAlchemy, Django ORM, Data Analysis, Pandas, MatPlotLib</li>
+           </ul>
+        </article>
+    </section>
+   </div>
+
+<button class="accordion clearfix" id="knowledge">
+        <span class="accordion_header left">Areas of Knowledge</span>
+        <span class="accordion_icon right">
+            <i class="fas fa-plus showbutton"></i>
+            <i class="fas fa-minus hidebutton"></i>
+        </span>
+    </button>
+<div class="panel" id="knowledgepanel"> 
+    <section class="skills_container clearfix">
+        <h2 class=sub_heading>Areas of Knowledge</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="two_even left blue">
+            <ul class="skills_list">
+                <li><i class="fas fa-check"></i>Object-Oriented Programming</li>
+                <li><i class="fas fa-check"></i>Test-driven Development</li>
+                <li><i class="fas fa-check"></i>RESTful APIs</li>
+            </ul>
+        </article>
+        <article class="two_even right blue">
+            <ul class="skills_list">
+                <li><i class="fas fa-check"></i>Data Structures and Algorithms</li>
+                <li><i class="fas fa-check"></i>Continuous Integration</li>
+                <li><i class="fas fa-check"></i>Software Design</li>
+            </ul>
+        </article>
+
+    </section>
+</div>
+
+<button class="accordion clearfix" id="flow">
+    <span class="accordion_header left">Workflow</span>
+    <span class="accordion_icon right">
+        <i class="fas fa-plus showbutton"></i>
+        <i class="fas fa-minus hidebutton"></i>
+    </span>
+</button>
+<div class="panel" id="flowpanel"> 
+    <section class="skills_container clearfix">
+        <h2 class=sub_heading>Workflow</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse arcu dui, luctus vel enim gravida, volutpat tincidunt tellus. Ut vitae erat laoreet, dapibus ipsum nec, commodo eros. Morbi vel est mauris. Nam aliquet massa felis, vitae scelerisque odio tempus et.</p>
+        <article class="five left">
+                <h2 class="title"><i class="fas fa-tasks fa-4x"></i></h2>
+                <h2 class="skills_bold">Research</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="far fa-file-code fa-4x"></i></h2>
+                <h2 class="skills_bold">Plan</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="fas fa-flask fa-4x"></i></h2>
+                <h2 class="skills_bold">Test</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="fas fa-cogs fa-4x"></i></h2>
+                <h2 class="skills_bold">Build</h2>
+            </article>
+            <article class="five left">
+                <h2 class="title"><i class="fas fa-bug fa-4x"></i></h2>
+                <h2 class="skills_bold">Debug</h2>
+            </article>
+
+    </section>
+</div>
+</section>
+<footer class="gray clearfix">
+    
+
+</footer>
+{% endblock %}
