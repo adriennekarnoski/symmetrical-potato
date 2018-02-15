@@ -218,6 +218,10 @@
     width: 150px;
 }
 
+.inner_list {
+    padding-left: 5%;
+}
+
 .project_link svg {
     margin-left: 5%;
     display: inline-block;
